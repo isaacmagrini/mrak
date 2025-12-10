@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Darkmrak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>DARKMRAK</h1>
+    <p class="subtitle">Codificador bidirecional por alfabeto personalizado</p>
+
+    <div class="container">
+
+        <label>Alfabeto de Entrada (A → B):</label>
+        <input id="alphaA" type="text" placeholder="Ex: Célia">
+
+        <label>Alfabeto de Saída (B → A):</label>
+        <input id="alphaB" type="text" placeholder="Ex: Pedro">
+
+        <label>Texto:</label>
+        <textarea id="inputText" placeholder="Cole o texto aqui..."></textarea>
+
+        <div class="buttons">
+            <button onclick="codificar()">Codificar</button>
+            <button onclick="decodificar()">Decodificar</button>
+        </div>
+
+        <label>Resultado:</label>
+        <textarea id="outputText" readonly></textarea>
+
+    </div>
+
+    <footer>
+        Ferramenta criada por <strong>Skymrak</strong>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
